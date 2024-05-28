@@ -1,0 +1,73 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Задает минимальную высоту для sticky footer */
+  background-color: #121212; /* Темный фон */
+  color: #e0e0e0; /* Светлый текст */
+
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    padding: 20px;
+    text-align: center;
+    background: #1e1e1e; /* Темный блок для основного контента */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    min-height: 30vh; /* Минимальная высота блока */
+    max-height: 30vh; /* Максимальная высота блока */
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #42a5f5; /* Яркий акцентный цвет */
+    }
+
+    .userInfo {
+      margin-top: 20px;
+
+      p {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+      }
+
+      .button1 {
+        margin-right: 10px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
