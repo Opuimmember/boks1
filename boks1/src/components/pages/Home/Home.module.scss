@@ -1,0 +1,102 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+
+    .banner {
+      background: url('/assets/img/banner.jpg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #42a5f5; /* Яркий акцентный цвет */
+      }
+
+      p {
+        font-size: 1.5em;
+        color: #e0e0e0;
+      }
+    }
+
+    .categories,
+    .recommended,
+    .specialOffers {
+      margin: 40px 0;
+
+      h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #42a5f5; /* Яркий акцентный цвет */
+      }
+
+      .categoryGrid,
+      .productGrid,
+      .offersGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .categoryCard,
+      .productCard,
+      .offerCard {
+        background-color: #1e1e1e; /* Темный фон для карточек */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s;
+        width: calc(33.333% - 20px);
+
+        @media (max-width: 768px) {
+          width: calc(50% - 20px);
+        }
+
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        h3 {
+          font-size: 1.2em;
+          margin: 10px 0;
+          color: #42a5f5; /* Яркий акцентный цвет */
+        }
+
+        p {
+          color: #bdbdbd;
+          margin: 0 0 10px;
+        }
+
+        a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+}

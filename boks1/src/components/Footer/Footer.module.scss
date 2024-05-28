@@ -1,0 +1,81 @@
+.footer {
+  background-color: #1e1e1e; /* Темный фон */
+  color: #e0e0e0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contactInfo,
+    .links,
+    .newsletter {
+      flex: 1;
+      margin: 10px;
+
+      h3 {
+        margin-bottom: 10px;
+        color: #42a5f5; /* Яркий акцентный цвет */
+      }
+
+      p,
+      li {
+        margin-bottom: 5px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+
+          a {
+            color: #42a5f5; /* Яркий акцентный цвет */
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          padding: 10px;
+          margin-bottom: 10px;
+          border: none;
+          border-radius: 5px;
+        }
+
+        button {
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: #42a5f5; /* Яркий акцентный цвет */
+          color: #fff;
+          cursor: pointer;
+          font-size: 1em;
+
+          &:hover {
+            background-color: #1e88e5;
+          }
+        }
+      }
+    }
+  }
+}
